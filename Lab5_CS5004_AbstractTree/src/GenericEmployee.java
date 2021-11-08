@@ -77,7 +77,7 @@ public abstract class GenericEmployee implements Employee {
   
   public String toString()
   {
-	  return "Name : " + name + ", Gender : " + gender + ", Pay : " + pay; 
+	  return "Name : " + name + ", Gender : " + gender + ", Pay : " + pay;
   }
   
 }

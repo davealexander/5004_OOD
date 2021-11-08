@@ -38,16 +38,33 @@ public class OrganizationImpl implements Organization {
 
     @Override
     public int getSize() {
-        return 0;
+        //Converts Tree of employees into an integer and counts per node. Will return the size of TreeNodes
+        return root.map(e-> Integer.valueOf(1)).reduce(0,(a, b)->a+b);
     }
 
     @Override
     public int getSizeByGender(Gender gender) {
-        return 0;
+        //Calls the map method on root
+         return root.map(e->
+         {
+             //if the parameter of gender matches to the employee, assign node value of 1;
+             if (e.getGender() == gender){
+                 return Integer.valueOf(1);
+             }
+             //if the parameter of gender does not match assign node value of 0;
+             else{
+                 return Integer.valueOf(0);
+             }
+         //Reduces the values down to one integer and combines all the values of the nodes
+         }).reduce(0,(a,b)->a+b);
     }
 
     @Override
     public List<String> allEmployees() {
-        return null;
+        return root.map(e->e.getName()).toList();
+    }
+
+    public String toString(){
+        return root.toString();
     }
 }

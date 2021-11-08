@@ -101,7 +101,7 @@ public class Supervisor extends GenericEmployee {
     String result = super.toString();
 
     for(Employee temp : superviseeList){
-      result +=temp.toString() + "\n";
+      result += temp.toString() + "\n";
     }
     return result;
   }

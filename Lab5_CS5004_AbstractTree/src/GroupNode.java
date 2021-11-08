@@ -6,6 +6,8 @@ It allows for a single data element along with an array list of other elements.
 You'll have to include the needed imports, fix the class declaration, and then populate the body with the needed methods.
 */
 
+import com.sun.source.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -50,8 +52,15 @@ public class GroupNode<T> extends AbstractTreeNode<T>{
     }
 
     @Override
-    public Object reduce(Object initialValue, BiFunction combiner) {
-        return null;
+    public T reduce(T initialValue, BiFunction<T, T, T> combiner)  {
+        //result is a generic variable that will equate to the data of the group node
+        T result = this.data;
+        //reduces the values that are in result
+        for(TreeNode<T> child : children){
+            result = child.reduce(result,combiner);
+        }
+        //returns the intialvalue and result.
+        return combiner.apply(initialValue,result);
     }
 
     @Override
@@ -60,8 +69,19 @@ public class GroupNode<T> extends AbstractTreeNode<T>{
     }
 
     @Override
-    public TreeNode map(Function transform) {
-        return null;
+    public <R> TreeNode<R> map(Function<T, R> transform) {
+        //Creates a new variable that is of a Generic GroupNode and transforms it to the transform parameter.
+        GroupNode<R> newNode = new GroupNode<R>(transform.apply(this.data));
+        //For loop that iterates through the tree node and its children and copies them to a new type.
+        for(TreeNode<T> child : children){
+            newNode.children.add(child.map(transform));
+        }
+        //Returns the new group node.
+        return newNode;
+
+    }
+    public String toString(){
+        return children.toString();
     }
 
 }

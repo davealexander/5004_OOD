@@ -40,16 +40,22 @@ public class LeafNode<T> extends AbstractTreeNode<T>{
 
     @Override
     public <R> TreeNode<R> map(Function<T, R> transform) {
-        return null;
+        //returns the LeafNode as a new type
+        return new LeafNode<R>(transform.apply(this.data));
     }
 
     @Override
+    //creates a generic reduce function
     public T reduce(T initialValue, BiFunction<T, T, T> combiner) {
-        return null;
+        //applies the combiner to the data in the leaf node.
+        return combiner.apply(initialValue,this.data);
     }
 
     @Override
     public void print() {
+    }
 
+    public String toString(){
+        return this.data.toString() + "\n";
     }
 }
