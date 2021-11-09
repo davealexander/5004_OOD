@@ -93,26 +93,17 @@ public class Supervisor extends GenericEmployee {
     for (Employee e : superviseeList) {
       result.addAll(e.toList(predicate));
     }
-    return result;
+    return result ;
   }
 
-
-  public String toString(){
-    String result = super.toString();
-
-    for(Employee temp : superviseeList){
-      result += temp.toString() + "\n";
-    }
-    return result;
-  }
   //Prints out Supervisor and Employees
   public void printEmployees()
-  {
-	  System.out.println("SUPERVISOR " + this);
-	  
-	  for (Employee e : superviseeList)
-	  {
-		  e.printEmployees();
+        {
+          System.out.println("SUPERVISOR " + this);
+
+          for (Employee e : superviseeList)
+          {
+            e.printEmployees();
 	  }
   }
 }

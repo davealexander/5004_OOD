@@ -56,6 +56,6 @@ public class LeafNode<T> extends AbstractTreeNode<T>{
     }
 
     public String toString(){
-        return this.data.toString() + "\n";
+        return  this.data.toString() + "\n";
     }
 }

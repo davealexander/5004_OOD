@@ -7,6 +7,7 @@
  * responsibilities.
  */
 public class InternalEmployee extends NonManagerEmployee {
+  //Constructor for an internal Employee.
   public InternalEmployee(String name, double pay, Gender gender) {
     super(name, pay, gender);
   }

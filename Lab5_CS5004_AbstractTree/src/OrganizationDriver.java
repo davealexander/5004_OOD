@@ -26,33 +26,30 @@ class OrganizationDriver
 		MonsterCorp.addEmployee(m2, "Ug the Terrible");
 		MonsterCorp.addEmployee(m3,m1.getName());
 		MonsterCorp.addEmployee(m4,m2.getName());
-//		MonsterCorp.addEmployee(m5,m2.getName());
-//		MonsterCorp.addEmployee(m6,m4.getName());
-//		MonsterCorp.addEmployee(m7,m4.getName());
-//		MonsterCorp.addEmployee(m8,m5.getName());
-//		MonsterCorp.addEmployee(m9,m5.getName());
+		MonsterCorp.addEmployee(m5,m2.getName());
+		MonsterCorp.addEmployee(m6,m4.getName());
+		MonsterCorp.addEmployee(m7,m4.getName());
+		MonsterCorp.addEmployee(m8,m5.getName());
+		MonsterCorp.addEmployee(m9,m5.getName());
 		
-		//This was part of the sample code provided my the module
+		//This was part of the sample code provided by the module
 		System.out.println(MonsterCorp.getSize());
-		System.out.println(MonsterCorp);
-
 
 		//Task 1: 
 		//This you'll have to add. We did it as part of the demo code, but you'll have to modify it to make it work with the new structure
 		//Print all the employees along with all their information
-		//MonsterCorp.printEmployees();
+		MonsterCorp.printEmployees();
 		
 		//Task 2: 
 		//This too is something we did in the demo code, but you'll have to modify it to work here.
 		//The syntax on this is a bit challenging, but if you study the getSizeByGender you should be able to figure it out
 		//Remember, don't try to guess. Try and understand the existing code and then see how you can change it
-		//System.out.println(MonsterCorp.getSize(m->m.getAnnualPay()==300.00));
+		System.out.println(MonsterCorp.getSize(m->m.getAnnualPay() == 300));
 		
 		//Task 3: 
 		//Print out a list of just employee names using allEmployees()
 		//This is not a hard task. Just make sure you understand what all Employees returns
-
-
+		MonsterCorp.printAllEmployees();
 		
 		//Extra Task
 		//Because we aren't implementing a filter, I'm removing this, but I invite you to find a workaround

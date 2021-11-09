@@ -15,6 +15,7 @@ import java.time.format.DateTimeFormatter;
 public class ContractEmployee extends NonManagerEmployee {
   private LocalDate contractEndDate;
 
+  //Constructor for ContractEmployee
   public ContractEmployee(String name, double pay, Gender gender, int date, int
    month, int year) throws IllegalArgumentException{
     super(name, pay, gender);
@@ -27,11 +28,13 @@ public class ContractEmployee extends NonManagerEmployee {
     }
   }
 
+  //Getter for End date of employment for employee
   @Override
   public String getEmploymentEndDate() {
     return DateTimeFormatter.ofPattern("MMddyyyy").format(contractEndDate);
   }
-  
+
+  //A print method for this type of employee.
   public void printEmployees()
   {
 	  System.out.print("CONTRACTOR ");

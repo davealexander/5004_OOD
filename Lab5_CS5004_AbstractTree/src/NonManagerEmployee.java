@@ -11,10 +11,12 @@ import java.util.List;
  */
 
 public class NonManagerEmployee extends GenericEmployee{
+ //NonManagerEmployee constructor
   public NonManagerEmployee(String name, double pay, Gender gender) {
     super(name, pay, gender);
   }
 
+  //AddSupervisee method adds a supervisee underneath the supervisor.
   @Override
   public Employee addSupervisee(String supervisorName,Employee supervisee) {
     if (this.name.equals(supervisorName)) {

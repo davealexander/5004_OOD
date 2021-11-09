@@ -12,19 +12,21 @@ import java.util.function.Predicate;
  * or have a reasonable default to be overridden by them.
  */
 
+//Abastract Class Generic Employee
 public abstract class GenericEmployee implements Employee {
+  //Variables make a promise that all classes that extend Generic Employee will return name, pay, and gender
   protected String name;
   protected double pay;
   protected Gender gender;
 
-
+//GenericEmployee constructor.
   public GenericEmployee(String name,double pay, Gender gender) {
     this.name = name;
     this.pay = pay;
     this.gender = gender;
   }
 
-
+//Getters
   @Override
   public String getName() {
     return this.name;
@@ -51,6 +53,7 @@ public abstract class GenericEmployee implements Employee {
     return "XXXXXXXX";
   }
 
+  //A count method that if an employee occupies a node return 1 if not return 0
   @Override
   public int count(Predicate<Employee> condition) {
     if (condition.test(this)) {
@@ -59,13 +62,16 @@ public abstract class GenericEmployee implements Employee {
     return 0;
   }
 
+  //toList creates a new ArrayList and adds employee(s) to the list and returns the result of the list.
   @Override
   public List<Employee> toList() {
     List<Employee> result = new ArrayList<Employee>();
     result.add(this);
     return result;
   }
-  
+
+  //This is an overload method that does the same as above but adds in logic for a predicate test making sure
+  //what is passed in is an employee.
   @Override
   public List<Employee> toList(Predicate<Employee> predicate) {
     List<Employee> result = new ArrayList<Employee>();
@@ -77,7 +83,7 @@ public abstract class GenericEmployee implements Employee {
   
   public String toString()
   {
-	  return "Name : " + name + ", Gender : " + gender + ", Pay : " + pay;
+	  return "Name : " + name + "\nGender : " + gender + "\nPay : " + pay + "\n \n";
   }
   
 }
