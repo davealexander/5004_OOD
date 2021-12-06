@@ -10,8 +10,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -23,13 +21,10 @@ public class WebConnection{
     protected Document website = Jsoup.connect(url).get();
     protected LinkedList<String> champions = new LinkedList<>();
     protected LinkedList<String> championName = new LinkedList<>();
-    private LinkedList<String> top100 = new LinkedList<>();
+    protected LinkedList<String> top100 = new LinkedList<>();
     private Elements names = website.getElementsByClass("name");
     String[] words = {"#", "Name", "Popularity", "Winrate", "BanRate", "KDA", "Pentas", "/", "match"};
-    protected ArrayList<String[]> championInfo = new ArrayList<>();
-
-
-
+    protected LinkedList<String[]> championInfo = new LinkedList<>();
 
     public WebConnection() throws IOException {};
 
@@ -39,11 +34,6 @@ public class WebConnection{
             Connection testWebsite = Jsoup.connect(url);
             //write if statemnt for 200 success  and 500 error.
             System.out.println("Connection Successful");
-    }
-
-    //Extract All data from DOM
-    public void extractData() throws IOException {
-        System.out.println(website.outerHtml());
     }
 
     //Site specific Method for leagueofgraphs.com a League of Legends Statisitics site.
@@ -61,14 +51,30 @@ public class WebConnection{
 
     //pulls in champions ordered from the most popular to least popular and adds them to the champion list
     public void pullPopularChampion(){
-        int counter =0;
         Elements championInfo = website.getElementsByTag("tr");
-        for(Element champion : championInfo) {
-            if (champion.hasText()) {
-                //System.out.println(champion.text());
-                champions.add(champion.text());
+        LinkedList<String> temp = new LinkedList<>();
+
+        for(String word: words){
+            for(Element champion : championInfo){
+                if(!champion.text().contains(word) && champion.hasText()){
+                   temp.add(champion.text());
+                }
             }
         }
+        //filter out extra
+        for(int i=0; i<157; i++){
+            champions.add(temp.get(i));
+        }
+        for(String champion : champions){
+            System.out.println(champion);
+        }
+//        for(Element champion : championInfo) {
+//            if (champion.hasText()) {
+//                //System.out.println(champion.text());
+//                champions.add(champion.text());
+//                System.out.println(champion.text());
+//            }
+        //}
     }
     //pulls in top 100 players and adds them to the linked list.
     public void top100Players() {
@@ -89,11 +95,13 @@ public class WebConnection{
     }
 
     public void parser(){
-        ArrayList<String> content = new ArrayList<>();
+        //ArrayList<String> content = new ArrayList<>();
         for (String champion : champions){
             championInfo.add(champion.split(" "));
         }
-//        for(String[] info : championInfo) {
+
+
+        //        for(String[] info : championInfo) {
 //            for (String element : info) {
 //                if(!element.contains("/") && !element.contains("#") && !element.contains("Name") && !element.contains("Popularity") && !element.contains("Winrate") && !element.contains("BanRate") && !element.contains("KDA")) {
 //                    content.add(element);
