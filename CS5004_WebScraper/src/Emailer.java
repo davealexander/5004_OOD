@@ -11,7 +11,7 @@ public class Emailer {
     private String to = "daveacenteno@gmail.com";
     private String from = "dalexander207@outlook.com";
     final private  String username = "dalexander207@outlook.com";
-    final private String password = "Fireball21!";
+    final private String password "Notentering password";
     Properties properties = new Properties();
 
     //Email constructor that takes in a parameter for a TO Email address. Will throw a Messaging Exception and IO Exception

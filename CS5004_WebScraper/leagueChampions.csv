@@ -1,173 +1,158 @@
 Name,Position,Kill Avg,Death Avg,Assist Avg,Pentakill Avg
-# Name Popularity Winrate BanRate KDA Pentas/match
-1. Caitlyn AD Carry 7.5 / 6.7 / 7.2 0.0026
+1. Caitlyn AD Carry 7.4 / 6.7 / 7.2 0.0025
 2. Jhin AD Carry 8.0 / 5.9 / 8.6 0.0029
-3. Jinx AD Carry 7.3 / 6.6 / 7.8 0.0061
-4. Lux Support, Mid 5.7 / 6.3 / 11.1 0.0003
-5. Yone Mid, Top 7.4 / 7.2 / 5.4 0.0030
-6. Yasuo Mid 7.1 / 7.6 / 5.5 0.0026
-7. Ezreal AD Carry 6.9 / 6.0 / 7.6 0.0020
-8. Vayne AD Carry 8.2 / 6.6 / 5.8 0.0104
-9. Viktor Mid 6.5 / 5.9 / 7.2 0.0018
-10. Lee Sin Jungler 7.5 / 6.2 / 8.9 0.0005
-11. Graves Jungler 7.3 / 6.0 / 6.9 0.0024
-12. Thresh Support 2.0 / 6.8 / 14.5 0.0000
-13. Zed Mid, Jungler 9.3 / 6.7 / 5.9 0.0012
-14. Lucian AD Carry 8.4 / 6.9 / 6.6 0.0022
-15. Jayce Top 6.7 / 7.2 / 6.2 0.0019
-# Name Popularity Winrate BanRate KDA Pentas/match
-16. Lulu Support 1.7 / 5.5 / 15.2 0.0000
-17. Viego Jungler 8.2 / 6.4 / 6.9 0.0041
-18. Irelia Top, Mid 7.6 / 7.6 / 4.8 0.0044
-19. Ekko Jungler, Mid 8.2 / 6.2 / 7.0 0.0019
-20. Akali Mid, Top 8.5 / 6.3 / 5.2 0.0015
-21. Blitzcrank Support 2.6 / 6.6 / 13.2 0.0000
-22. Nami Support 2.4 / 6.1 / 16.6 0.0000
-23. Xerath Support, Mid 5.7 / 6.2 / 10.4 0.0002
-24. Talon Jungler 9.2 / 6.9 / 7.0 0.0017
-25. Pyke Support 7.7 / 7.9 / 8.7 0.0029
-26. Vi Jungler 7.3 / 6.5 / 8.3 0.0005
-27. Sylas Mid, Top 7.7 / 7.2 / 6.9 0.0018
-28. Yuumi Support 2.0 / 4.7 / 16.5 0.0000
-29. Kayn Jungler 8.3 / 6.9 / 7.7 0.0014
-30. Jax Top 6.7 / 6.7 / 4.5 0.0022
-# Name Popularity Winrate BanRate KDA Pentas/match
-31. Kai'Sa AD Carry 8.7 / 6.6 / 6.5 0.0057
-32. Camille Top 6.8 / 6.4 / 6.2 0.0012
-33. Soraka Support 1.1 / 5.8 / 15.4 0.0000
-34. Morgana Support 3.4 / 6.8 / 13.5 0.0000
-35. Shaco Jungler 8.3 / 6.4 / 8.6 0.0010
-36. Vex Mid, Support 7.3 / 6.9 / 8.3 0.0017
-37. Sett Top 6.0 / 6.8 / 6.2 0.0009
-38. Leona Support 2.0 / 6.8 / 13.5 0.0000
-39. Master Yi Jungler 9.7 / 7.4 / 5.0 0.0170
-40. Miss Fortune AD Carry 7.6 / 6.9 / 8.0 0.0047
-41. Ashe AD Carry 6.0 / 6.7 / 9.8 0.0014
-42. Kha'Zix Jungler 9.5 / 6.3 / 6.4 0.0031
-43. Senna Support 4.8 / 7.1 / 12.5 0.0005
-44. Twitch AD Carry 10.0 / 7.5 / 7.4 0.0055
-45. Katarina Mid 9.9 / 7.4 / 6.0 0.0111
-# Name Popularity Winrate BanRate KDA Pentas/match
-46. LeBlanc Mid 7.8 / 5.4 / 6.9 0.0006
-47. Karma Support 2.8 / 6.1 / 13.5 0.0000
-48. Gwen Top 6.3 / 6.7 / 4.9 0.0026
-49. Warwick Jungler, Top 8.2 / 6.9 / 7.8 0.0007
-50. Samira AD Carry 9.1 / 7.4 / 6.6 0.0170
-51. Vladimir Mid, Top 7.4 / 5.9 / 6.0 0.0046
-52. Kassadin Mid 8.5 / 5.7 / 5.9 0.0075
-53. Draven AD Carry 8.6 / 7.2 / 6.1 0.0058
-54. Teemo Top 6.3 / 7.3 / 6.1 0.0007
-55. Nautilus Support 2.5 / 7.0 / 13.4 0.0000
-56. Qiyana Mid, Jungler 9.1 / 7.2 / 6.5 0.0014
-57. Darius Top 7.1 / 6.5 / 4.8 0.0055
-58. Sion Top 5.3 / 7.6 / 6.8 0.0002
-59. Xin Zhao Jungler 7.0 / 6.3 / 8.1 0.0013
-60. Gangplank Top 6.4 / 6.8 / 6.9 0.0021
-# Name Popularity Winrate BanRate KDA Pentas/match
-61. Aphelios AD Carry 6.9 / 7.0 / 6.5 0.0054
-62. Tryndamere Top 7.5 / 6.2 / 4.2 0.0018
-63. Akshan Mid 9.3 / 7.1 / 6.1 0.0035
-64. Trundle Jungler, Top 6.2 / 5.8 / 8.0 0.0007
-65. Twisted Fate Mid 5.3 / 6.9 / 9.7 0.0002
+3. Jinx AD Carry 7.3 / 6.6 / 7.8 0.0060
+4. Lux Support, Mid 5.7 / 6.3 / 11.0 0.0003
+5. Yone Mid, Top 7.4 / 7.2 / 5.4 0.0031
+6. Yasuo Mid 7.1 / 7.7 / 5.5 0.0027
+7. Ezreal AD Carry 6.9 / 6.0 / 7.6 0.0022
+8. Vayne AD Carry 8.2 / 6.6 / 5.8 0.0106
+9. Viktor Mid 6.5 / 5.9 / 7.2 0.0019
+10. Lee Sin Jungler 7.5 / 6.2 / 8.9 0.0006
+11. Graves Jungler 7.3 / 6.0 / 6.9 0.0021
+12. Thresh Support 2.0 / 6.8 / 14.6 0.0000
+13. Zed Mid, Jungler 9.3 / 6.7 / 5.9 0.0011
+14. Lucian AD Carry 8.4 / 6.9 / 6.7 0.0024
+15. Lulu Support 1.7 / 5.5 / 15.2 0.0000
+16. Jayce Top 6.8 / 7.3 / 6.2 0.0016
+17. Viego Jungler 8.1 / 6.4 / 6.9 0.0042
+18. Irelia Top, Mid 7.6 / 7.6 / 4.8 0.0042
+19. Akali Mid, Top 8.5 / 6.3 / 5.2 0.0015
+20. Ekko Jungler, Mid 8.2 / 6.2 / 7.0 0.0018
+21. Nami Support 2.4 / 6.1 / 16.6 0.0000
+22. Blitzcrank Support 2.6 / 6.6 / 13.2 0.0000
+23. Xerath Support, Mid 5.7 / 6.2 / 10.4 0.0003
+24. Talon Jungler 9.2 / 6.9 / 7.0 0.0015
+25. Vi Jungler 7.3 / 6.5 / 8.3 0.0008
+26. Pyke Support 7.7 / 7.9 / 8.8 0.0030
+27. Yuumi Support 2.0 / 4.6 / 16.5 0.0000
+28. Kayn Jungler 8.3 / 6.9 / 7.7 0.0016
+29. Sylas Mid, Top 7.7 / 7.2 / 6.9 0.0020
+30. Jax Top 6.7 / 6.7 / 4.5 0.0021
+31. Kai'Sa AD Carry 8.7 / 6.6 / 6.5 0.0053
+32. Camille Top 6.9 / 6.4 / 6.2 0.0012
+33. Shaco Jungler 8.3 / 6.4 / 8.6 0.0009
+34. Morgana Support 3.4 / 6.8 / 13.4 0.0000
+35. Vex Mid, Support 7.3 / 6.9 / 8.3 0.0015
+36. Sett Top 6.0 / 6.7 / 6.2 0.0011
+37. Miss Fortune AD Carry 7.7 / 6.9 / 8.1 0.0038
+38. Master Yi Jungler 9.7 / 7.4 / 5.0 0.0172
+39. Leona Support 2.0 / 6.8 / 13.5 0.0000
+40. Soraka Support 1.1 / 5.8 / 15.4 0.0000
+41. Ashe AD Carry 6.1 / 6.7 / 9.8 0.0016
+42. Kha'Zix Jungler 9.5 / 6.4 / 6.4 0.0033
+43. Twitch AD Carry 9.9 / 7.5 / 7.4 0.0051
+44. Senna Support 4.8 / 7.1 / 12.5 0.0004
+45. Katarina Mid 10.0 / 7.4 / 6.1 0.0108
+46. LeBlanc Mid 7.8 / 5.5 / 6.9 0.0009
+47. Karma Support 2.8 / 6.2 / 13.5 0.0000
+48. Warwick Jungler 8.2 / 6.9 / 7.8 0.0009
+49. Samira AD Carry 9.2 / 7.5 / 6.6 0.0168
+50. Gwen Top 6.2 / 6.8 / 4.9 0.0023
+51. Vladimir Mid, Top 7.4 / 5.9 / 6.0 0.0038
+52. Draven AD Carry 8.6 / 7.2 / 6.1 0.0063
+53. Teemo Top 6.3 / 7.3 / 6.1 0.0008
+54. Kassadin Mid 8.5 / 5.7 / 5.9 0.0076
+55. Nautilus Support 2.5 / 6.9 / 13.4 0.0000
+56. Darius Top 7.1 / 6.5 / 4.8 0.0059
+57. Qiyana Mid, Jungler 9.1 / 7.2 / 6.5 0.0014
+58. Gangplank Top 6.3 / 6.8 / 6.9 0.0016
+59. Sion Top 5.3 / 7.6 / 6.7 0.0004
+60. Trundle Jungler, Top 6.2 / 5.8 / 8.0 0.0006
+61. Xin Zhao Jungler 7.1 / 6.3 / 8.1 0.0011
+62. Tryndamere Top 7.5 / 6.2 / 4.2 0.0022
+63. Akshan Mid 9.3 / 7.1 / 6.1 0.0031
+64. Aphelios AD Carry 6.9 / 7.0 / 6.5 0.0048
+65. Twisted Fate Mid 5.3 / 6.9 / 9.8 0.0002
 66. Nocturne Jungler 8.4 / 7.0 / 7.8 0.0007
-67. Dr. Mundo Top 5.7 / 5.4 / 7.4 0.0007
-68. Hecarim Jungler 8.0 / 6.1 / 9.2 0.0009
-69. Malphite Top 5.2 / 5.7 / 8.7 0.0001
-70. Shen Top 4.6 / 5.4 / 11.0 0.0001
-71. Zac Jungler 5.3 / 5.0 / 11.8 0.0004
-72. Fiora Top 6.4 / 6.4 / 4.6 0.0016
+67. Dr. Mundo Top 5.6 / 5.5 / 7.4 0.0009
+68. Malphite Top 5.1 / 5.7 / 8.7 0.0000
+69. Hecarim Jungler 8.0 / 6.0 / 9.2 0.0012
+70. Zac Jungler 5.3 / 5.1 / 11.8 0.0002
+71. Shen Top 4.5 / 5.4 / 11.0 0.0001
+72. Fiora Top 6.4 / 6.4 / 4.6 0.0018
 73. Brand Support 6.0 / 8.6 / 9.6 0.0003
-74. Tahm Kench Top 5.4 / 5.3 / 8.3 0.0002
-75. Poppy Jungler, Top 6.0 / 5.9 / 9.0 0.0001
-# Name Popularity Winrate BanRate KDA Pentas/match
-76. Rakan Support 1.9 / 6.0 / 15.2 0.0000
-77. Xayah AD Carry 7.2 / 6.5 / 7.5 0.0034
+74. Tahm Kench Top 5.4 / 5.3 / 8.2 0.0001
+75. Poppy Jungler, Top 6.1 / 5.9 / 9.0 0.0002
+76. Xayah AD Carry 7.2 / 6.5 / 7.6 0.0027
+77. Rakan Support 1.9 / 6.0 / 15.2 0.0000
 78. Veigar Mid 7.4 / 6.4 / 7.5 0.0007
-79. Riven Top 6.7 / 6.4 / 5.4 0.0017
-80. Volibear Top, Jungler 6.2 / 6.4 / 7.1 0.0013
-81. Bard Support 2.9 / 6.2 / 14.6 0.0000
-82. Tristana AD Carry 8.4 / 6.7 / 6.3 0.0028
-83. Cho'Gath Top, Mid 6.6 / 6.1 / 6.8 0.0005
-84. Mordekaiser Top 6.7 / 6.5 / 5.1 0.0012
-85. Rengar Jungler, Top 8.7 / 7.2 / 5.8 0.0021
-86. Nidalee Jungler 7.8 / 5.7 / 7.5 0.0013
-87. Garen Top 7.0 / 5.7 / 4.8 0.0005
-88. Diana Jungler, Mid 7.6 / 7.0 / 7.2 0.0014
-89. Gragas Jungler, Top 5.8 / 6.0 / 9.1 0.0007
-90. Alistar Support 2.0 / 6.7 / 14.4 0.0000
-# Name Popularity Winrate BanRate KDA Pentas/match
-91. Nasus Top 5.5 / 5.6 / 5.6 0.0016
-92. Syndra Mid 6.7 / 6.3 / 7.2 0.0005
-93. Nunu & Willump Jungler 5.5 / 6.2 / 12.2 0.0002
-94. Jarvan IV Jungler 6.1 / 6.1 / 13.3 0.0005
-95. Lillia Jungler 7.2 / 6.4 / 8.5 0.0015
-96. Zilean Support 2.7 / 5.5 / 14.0 0.0001
-97. Ahri Mid 6.7 / 5.9 / 7.9 0.0007
-98. Janna Support 2.0 / 6.0 / 15.5 0.0000
-99. Kindred Jungler 8.4 / 7.2 / 6.9 0.0034
-100. Seraphine Support 3.5 / 6.6 / 13.1 0.0001
-101. Swain Support 5.8 / 7.6 / 11.4 0.0008
-102. Ryze Mid, Top 5.3 / 6.1 / 6.8 0.0007
-103. Aatrox Top 5.9 / 6.2 / 6.2 0.0014
-104. Kayle Top 5.8 / 6.4 / 6.0 0.0045
-105. Zyra Support 4.3 / 7.6 / 11.1 0.0000
-# Name Popularity Winrate BanRate KDA Pentas/match
-106. Corki Mid 8.1 / 6.7 / 7.1 0.0054
-107. Amumu Jungler, Support 4.2 / 6.8 / 11.8 0.0000
-108. Ziggs AD Carry 5.8 / 6.2 / 8.8 0.0001
-109. Anivia Mid 6.5 / 5.8 / 8.0 0.0008
-110. Evelynn Jungler 9.2 / 6.2 / 7.0 0.0009
-111. Zoe Mid 6.9 / 6.3 / 7.7 0.0004
-112. Fiddlesticks Jungler 6.2 / 6.3 / 9.5 0.0004
+79. Riven Top 6.7 / 6.4 / 5.4 0.0020
+80. Tristana AD Carry 8.4 / 6.8 / 6.3 0.0030
+81. Volibear Top, Jungler 6.2 / 6.4 / 7.1 0.0010
+82. Garen Top 7.0 / 5.7 / 4.8 0.0006
+83. Cho'Gath Top, Mid 6.6 / 6.1 / 6.8 0.0004
+84. Nidalee Jungler 7.8 / 5.8 / 7.6 0.0013
+85. Gragas Jungler, Top 5.8 / 6.0 / 9.0 0.0006
+86. Rengar Jungler, Top 8.8 / 7.2 / 5.8 0.0019
+87. Mordekaiser Top 6.6 / 6.5 / 5.0 0.0010
+88. Bard Support 2.9 / 6.2 / 14.7 0.0000
+89. Diana Jungler, Mid 7.7 / 7.0 / 7.2 0.0012
+90. Nasus Top 5.4 / 5.6 / 5.6 0.0011
+91. Alistar Support 2.0 / 6.8 / 14.3 0.0000
+92. Nunu & Willump Jungler 5.5 / 6.3 / 12.2 0.0002
+93. Zilean Support 2.7 / 5.5 / 14.1 0.0001
+94. Janna Support 2.0 / 6.0 / 15.5 0.0000
+95. Ahri Mid 6.7 / 5.9 / 7.9 0.0005
+96. Syndra Mid 6.7 / 6.3 / 7.2 0.0003
+97. Lillia Jungler 7.2 / 6.4 / 8.5 0.0013
+98. Jarvan IV Jungler 6.1 / 6.1 / 13.3 0.0005
+99. Seraphine Support 3.5 / 6.6 / 13.2 0.0001
+100. Kindred Jungler 8.4 / 7.2 / 7.0 0.0027
+101. Swain Support 5.8 / 7.7 / 11.4 0.0008
+102. Aatrox Top 5.9 / 6.1 / 6.2 0.0016
+103. Zyra Support 4.3 / 7.6 / 11.1 0.0001
+104. Ryze Mid, Top 5.3 / 6.1 / 6.8 0.0007
+105. Anivia Mid 6.4 / 5.8 / 8.0 0.0008
+106. Kayle Top 5.8 / 6.4 / 6.1 0.0049
+107. Amumu Jungler, Support 4.3 / 6.8 / 11.9 0.0001
+108. Corki Mid 8.2 / 6.7 / 7.1 0.0054
+109. Evelynn Jungler 9.3 / 6.1 / 7.0 0.0008
+110. Ziggs AD Carry 5.8 / 6.2 / 8.8 0.0004
+111. Zoe Mid 6.9 / 6.3 / 7.7 0.0003
+112. Fiddlesticks Jungler 6.2 / 6.2 / 9.5 0.0005
 113. Renekton Top 5.6 / 6.1 / 6.0 0.0006
-114. Galio Mid, Support 4.1 / 6.7 / 11.7 0.0000
-115. Pantheon Support, Mid 6.9 / 7.7 / 8.4 0.0010
-116. Orianna Mid 5.5 / 5.9 / 9.7 0.0007
-117. Malzahar Mid 5.1 / 6.3 / 8.1 0.0002
-118. Ornn Top 4.2 / 5.7 / 9.4 0.0001
-119. Karthus Jungler 8.2 / 7.9 / 9.9 0.0012
-120. Lissandra Mid 5.8 / 6.5 / 9.2 0.0010
-# Name Popularity Winrate BanRate KDA Pentas/match
-121. Sivir AD Carry 6.7 / 6.3 / 8.8 0.0024
-122. Urgot Top 6.7 / 6.4 / 5.6 0.0010
-123. Vel'Koz Support, Mid 5.7 / 6.7 / 9.4 0.0001
-124. Braum Support 1.7 / 6.2 / 15.4 0.0000
-125. Fizz Mid 9.0 / 6.5 / 6.2 0.0019
-126. Sona Support 2.6 / 6.2 / 15.4 0.0000
-127. Singed Top 4.8 / 7.1 / 9.3 0.0004
-128. Kog'Maw AD Carry 8.4 / 7.2 / 7.3 0.0052
+114. Malzahar Mid 5.1 / 6.3 / 8.0 0.0004
+115. Pantheon Support 7.0 / 7.7 / 8.4 0.0010
+116. Orianna Mid 5.4 / 5.9 / 9.7 0.0006
+117. Galio Mid, Support 4.2 / 6.7 / 11.6 0.0000
+118. Karthus Jungler 8.3 / 8.0 / 10.0 0.0010
+119. Lissandra Mid 5.8 / 6.5 / 9.1 0.0010
+120. Vel'Koz Support, Mid 5.6 / 6.7 / 9.4 0.0002
+121. Ornn Top 4.2 / 5.7 / 9.4 0.0002
+122. Sivir AD Carry 6.7 / 6.4 / 8.9 0.0029
+123. Urgot Top 6.7 / 6.4 / 5.6 0.0012
+124. Fizz Mid 9.1 / 6.5 / 6.2 0.0025
+125. Braum Support 1.7 / 6.2 / 15.4 0.0002
+126. Sona Support 2.6 / 6.1 / 15.4 0.0000
+127. Singed Top 4.7 / 7.0 / 9.3 0.0005
+128. Kog'Maw AD Carry 8.5 / 7.2 / 7.3 0.0055
 129. Elise Jungler 7.6 / 6.1 / 7.9 0.0004
-130. Annie Mid 6.9 / 6.7 / 8.4 0.0008
-131. Maokai Support 2.9 / 6.7 / 11.8 0.0001
-132. Cassiopeia Mid 7.1 / 6.8 / 6.3 0.0008
-133. Kennen Top 5.7 / 6.1 / 6.6 0.0008
-134. Udyr Jungler 6.2 / 5.8 / 7.7 0.0004
-135. Gnar Top 5.4 / 6.1 / 6.9 0.0007
-# Name Popularity Winrate BanRate KDA Pentas/match
-136. Shyvana Jungler 7.2 / 5.8 / 6.8 0.0024
-137. Sejuani Jungler 5.3 / 5.5 / 11.8 0.0000
-138. Wukong Top 6.7 / 6.0 / 6.3 0.0014
-139. Kalista AD Carry 8.7 / 7.1 / 6.3 0.0040
-140. Rammus Jungler 5.1 / 6.1 / 12.0 0.0001
-141. Varus AD Carry 7.8 / 6.9 / 7.8 0.0018
-142. Rek'Sai Jungler 8.8 / 6.6 / 7.4 0.0007
-143. Rell Support 2.3 / 7.1 / 14.8 0.0000
-144. Heimerdinger Top, Mid 5.3 / 7.0 / 7.1 0.0001
-145. Yorick Top 4.5 / 5.5 / 4.5 0.0010
-146. Illaoi Top 5.2 / 7.1 / 4.9 0.0010
-147. Kled Top 6.6 / 6.3 / 7.7 0.0016
-148. Taric Support 2.1 / 6.5 / 14.5 0.0000
-149. Taliyah Jungler 8.1 / 7.1 / 9.2 0.0011
-150. Neeko Mid, Support 5.5 / 6.7 / 8.2 0.0003
-# Name Popularity Winrate BanRate KDA Pentas/match
-151. Azir Mid 5.6 / 6.5 / 6.9 0.0016
-152. Rumble Top, Mid 6.9 / 6.6 / 7.8 0.0004
-153. Quinn Top 7.5 / 7.6 / 7.0 0.0012
-154. Ivern Jungler 2.7 / 5.5 / 13.6 0.0000
-155. Olaf Jungler 7.0 / 6.6 / 7.1 0.0013
-156. Aurelion Sol Mid 6.6 / 6.6 / 9.5 0.0004
-157. Skarner Jungler 4.6 / 5.8 / 10.5 0.0002
-0 Comment
-Post a Comment
-Your name:
-Comment:
+130. Maokai Support 2.9 / 6.7 / 11.8 0.0001
+131. Cassiopeia Mid 7.1 / 6.8 / 6.3 0.0011
+132. Annie Mid 6.9 / 6.7 / 8.3 0.0005
+133. Udyr Jungler 6.2 / 5.8 / 7.7 0.0008
+134. Kennen Top 5.7 / 6.1 / 6.6 0.0007
+135. Gnar Top 5.5 / 6.1 / 6.9 0.0010
+136. Shyvana Jungler 7.2 / 5.8 / 6.9 0.0020
+137. Sejuani Jungler 5.3 / 5.5 / 11.8 0.0001
+138. Varus AD Carry 7.7 / 6.9 / 7.7 0.0024
+139. Wukong Top 6.7 / 6.0 / 6.3 0.0009
+140. Rammus Jungler 5.1 / 6.1 / 11.9 0.0002
+141. Kalista AD Carry 8.8 / 7.0 / 6.3 0.0044
+142. Rek'Sai Jungler 8.9 / 6.6 / 7.4 0.0003
+143. Heimerdinger Top, Mid 5.4 / 7.0 / 7.1 0.0003
+144. Rell Support 2.2 / 7.2 / 14.7 0.0000
+145. Illaoi Top 5.1 / 7.1 / 4.9 0.0006
+146. Yorick Top 4.5 / 5.5 / 4.5 0.0009
+147. Kled Top 6.5 / 6.3 / 7.6 0.0012
+148. Taric Support 2.1 / 6.5 / 14.4 0.0000
+149. Neeko Mid, Support 5.6 / 6.7 / 8.1 0.0005
+150. Taliyah Jungler 8.0 / 7.0 / 9.1 0.0019
+151. Rumble Top, Mid 6.9 / 6.7 / 7.7 0.0008
+152. Azir Mid 5.6 / 6.5 / 6.9 0.0014
+153. Quinn Top 7.6 / 7.6 / 7.0 0.0012
+154. Ivern Jungler 2.6 / 5.4 / 13.6 0.0000
+155. Olaf Jungler 7.0 / 6.6 / 7.0 0.0015
+156. Aurelion Sol Mid 6.6 / 6.6 / 9.5 0.0006
+157. Skarner Jungler 4.7 / 5.7 / 10.4 0.0000
