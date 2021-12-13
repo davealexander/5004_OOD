@@ -2,7 +2,9 @@
 David Centeno
 CS5004 OOD
 Final Project
-WebConnection Class handles establishing a connection to the website
+
+Webconnection class that creates a connection to a pre-defined or user defined website and scrapes
+text from the provided HTML tags.
  */
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
@@ -10,99 +12,138 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class WebConnection{
-    //url is a variable to connect ot the website
+
     private String webUrl;
     private Document doc;
+    private Document doc2;
     private final String url = "https://www.leagueofgraphs.com/champions/builds";
     private final Document  playerDOM = Jsoup.connect("https://www.leagueofgraphs.com/rankings/summoners").get();
     protected Document website = Jsoup.connect(url).get();
-    protected LinkedList<String> champions = new LinkedList<>();
-    protected LinkedList<String> championName = new LinkedList<>();
-    protected LinkedList<String> top100 = new LinkedList<>();
-    protected LinkedList<String[]> championInfo = new LinkedList<>();
+    protected WebListImpl champions = new WebListImpl();
+    protected WebListImpl top100 = new WebListImpl();
+    protected WebListImpl divList = new WebListImpl();
+    protected WebListImpl tagList= new WebListImpl();
     String[] words = {"#", "Name", "Popularity", "Winrate", "BanRate", "KDA", "Pentas", "/", "match"};
 
 
-    //Used for static methods for League of Graphs example
-    public WebConnection() throws IOException {};
+    /**
+     * WebConnection constructor Used for League of Graphs example (pre-defined run of program)
+     * @throws IOException will throw an exception if the URL is unreachable or is invalid
+     */
+    public WebConnection() throws IOException {
+        this.doc = website;
+        this.doc2 = playerDOM;
+    };
 
-    //Constructor that takes in requested webaddress
-    public WebConnection(String webaddress) throws IOException{
+    /**
+     * WebConnection constructor Used for League of Graphs example (pre-defined run of program)
+     * @throws IOException will throw an exception if the URL is unreachable or is invalid
+     */    public WebConnection(String webaddress) throws IOException{
         this.webUrl = webaddress;
         this.doc = Jsoup.connect(webUrl).get();
     }
 
-    //returns the url of the webConnection object
+    /**
+     * getUrl is used for testing if url in constructor is set correctly
+     * @return returns the url from the constructor
+     */
     public String getUrl(){
+        return url;
+    }
+
+    /**
+     * getUserUrl is used for testing if url in constructor is set correctly
+     * @return returns the webUrl from the constructor
+     */
+    public String getUserUrl(){
         return this.webUrl;
     }
 
-    //Tests the connection of a website
-    public void testConnection(String url) {
-        try{
-            Connection testWebsite = Jsoup.connect(url);
-            testWebsite.response().parse();
-            System.out.println("Success: Connection was successful");
-        }
-        catch (IOException e) {
-            System.out.println("Error: Connection could not be established");
-            e.printStackTrace();
-        }
-    }
-
-    //Method that specficially extracts the text of HTML div tags
+    /**
+     * extractDivs is a method that specifically extracts the text of HTML div tags
+     */
     public void extractDivs(){
         Elements divTag = doc.getElementsByTag("div");
         for(Element element : divTag){
             if(element.hasText())
-            System.out.println(element.text());
+            divList.addData(element.text());
         }
     }
 
-    //Method that extracts text based off the html passed to the method.
+    /**
+     * extractTags is a method that extracts text based off the HTML tag passed to the method.
+     * If no valid tag is passed it will default to div HTML tag
+     */
     public void extractTags(String tag){
-        Elements divTag = doc.getElementsByTag(tag);
-        for(Element element : divTag){
-            System.out.println(element.text());
-        }
-    }
-
-    //Site specific Method for leagueofgraphs.com a League of Legends Statisitics site.
-
-    //pulls in champions ordered from the most popular to least popular and adds them to the champion list
-    public void pullPopularChampion(){
-        Elements championInfo = website.getElementsByTag("tr");
-        LinkedList<String> temp = new LinkedList<>();
-
-        for(String word: words){
-            for(Element champion : championInfo){
-                if(!champion.text().contains(word) && champion.hasText()){
-                   temp.add(champion.text());
+        if(tag != ""){
+            Elements htmlTag = doc.getElementsByTag(tag);
+            for (Element element : htmlTag) {
+                if (element.hasText()) {
+                    tagList.addData(element.text());
+                    System.out.println(element.text());
                 }
             }
         }
-        //filter out extra lines
-        for(int i=0; i<157; i++){
-            champions.add(temp.get(i));
-        }
-        for(String champion : champions){
-            System.out.println(champion);
-        }
-    }
-
-    //pulls in top 100 players and adds them to the linked list.
-    public void top100Players() {
-        Elements playerInfo = playerDOM.getElementsByTag("tr");
-        for(Element player : playerInfo){
-            if(player.hasText()){
-                System.out.println(player.text());
-                top100.add(player.text());
+        else{
+            Elements divTag = doc.getElementsByTag("div");
+            for (Element element : divTag) {
+                tagList.addData(element.text());
             }
         }
     }
 
+
+    //Site specific Method for leagueofgraphs.com a League of Legends Statisitics site.
+
+    /**
+     * pullPopularChampion method pulls in champions ordered from the most popular to least popular
+     * and adds them to the champion list
+     */
+    public void pullPopularChampion(){
+        Elements championInfo = website.getElementsByTag("tr");
+        WebListImpl temp = new WebListImpl();
+
+        //Outer loop iterates through words to filter out of text extraction
+        for(String word: words){
+            for(Element champion : championInfo){
+                if(!champion.text().contains(word) && champion.hasText()){
+                    //Sets the champion data from type Element to String/text
+                   temp.addData(champion.text());
+                }
+            }
+        }
+        //filter out extra/duplicate lines from filtering
+        for(int i=3; i<161; i++){
+            //champions.add(temp.get(i));
+            champions.addData(temp.getData(i));
+        }
+        //Test for loop to see what is being put in the final linked list
+        for(int i= 0; i<157; i++) {
+            System.out.println(champions.getData(i));
+        }
+    }
+
+    /**
+     * top100Players method pulls in top 100 players and adds them to the linked list.
+     */
+    public void top100Players() {
+        Elements playerInfo = playerDOM.getElementsByTag("tr");
+        WebListImpl playerTemp = new WebListImpl();
+
+        for(Element player : playerInfo){
+            if(player.hasText()){
+                playerTemp.addData(player.text());
+            }
+        }
+        //Refines what is being put in the final linked list
+        for(int i=4; i< 104; i++) {
+            top100.addData(playerTemp.getData(i));
+        }
+        //Test to print all text extracted into linked list.
+        for(int i=0; i< 100; i++) {
+            System.out.println(top100.getData(i));
+        }
+    }
 }
